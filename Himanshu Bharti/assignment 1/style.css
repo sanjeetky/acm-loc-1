@@ -1,0 +1,100 @@
+body{
+	border:5px solid #a9ce69;
+	margin: 30%;
+	padding: 10%; 
+	font-family: 'Noto Sans TC', sans-serif;;
+	font-size: 2em;
+	background-image:url(https://wallpaperbro.com/img/433509.png);
+
+
+}
+#my:first-letter{
+	color: #2070d8;
+	font-size: 2em;
+
+}
+#my{
+	font-family: 'Lobster', cursive;
+	color: #57d2e5;
+}
+img{
+	width: 322px;
+}
+#your{
+	font-family: 'Pacifico', cursive;
+	color: #57d2e5;
+
+}
+#about{
+	font-family:  'Playfair Display', serif;
+	color:#291189;
+		text-decoration:underline; 
+}
+#about:first-letter{
+	font-size: 2em; 
+}
+#skill{
+	font-family:  'Playfair Display', serif;
+	color: #291189;
+	text-decoration:underline; 
+}
+#skill:first-letter{
+	font-size: 2em; 
+}
+#result{
+	font-family:  'Playfair Display', serif;
+	color: #291189;
+	text-decoration:underline; 
+}
+#result:first-letter{
+	font-size: 2em; 
+}
+#contact{
+	font-family:  'Playfair Display', serif;
+	color: #291189;
+	text-decoration:underline; 
+}
+#contact:first-letter{
+	font-size: 2em; 
+}
+#we{
+	font-family: 'Macondo Swash Caps', cursive;
+	color: #6b02ff;
+}
+#one{
+	background-color:#07f7db;
+}
+#two{
+	background-color: #07f7db;
+}
+#three{
+	background-color:#07f7db;
+}
+#four{
+	background-color:#07f7db;
+}
+
+
+.jumbotron h3{
+	color: #7f084a;
+}
+.jumbotron h2{
+	color: #7f084a;
+
+}
+.jumbotron li{
+	color:#7f084a; 
+}
+#five{
+	color:#7f084a;  
+}
+#six{
+	color: #7f084a; 
+}
+#seven{
+	color: #7f084a; 
+}
+#eight{
+	color: #7f084a; 
+
+}

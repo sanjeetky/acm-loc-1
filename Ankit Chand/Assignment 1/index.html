@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ankit Chand</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<style type="text/css">
+		*,
+		*::before,
+		*::after{
+			box-sizing: border-box;
+		}
+		*:focus{
+			outline: none;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+			background:#f0f8ff; 
+			color:black;
+			font-family: sans-serif;
+			
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			width: 100%;
+		}
+		.home img{
+			width: 100%;
+			
+		}
+		.project img{
+			
+
+		}
+		aside{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 120px;
+			height: 100%;
+			overflow: none;
+			text-align: center;
+			z-index: 1;
+			padding: 0;
+		}
+		aside img{
+			margin-bottom: -3px;
+		}
+		.material-icons.md-36{
+			font-size: 36px;
+		}
+		aside a{
+			display: block;
+			padding: 15px 0;
+			color: black;
+			transition: all 0.35s;
+			text-transform: uppercase;
+			font-size: 0.75em;
+			letter-spacing: 2px;
+		}
+		aside p{
+			padding: 0;
+			margin: 0;
+		}
+		aside a:hover{
+			background: #87cefa;
+		}
+		aside nav a:nth-child(){
+			background:#87cefa ;
+		}
+		aside nav a:nth-child(1):hover{
+			background: #87cefa;
+			color: #87cefa;
+		}
+		main{
+			font-family: Permanent Marker;
+			max-width: 980px;
+			background: #87cefa;
+			margin-left:20%;
+			padding: 12px 50px 12px 50px; 
+		}
+		header{
+			text-align: center;
+			letter-spacing: 2px;
+		}
+		header h1{
+			font-weight: bold;
+			font-size: 4em;
+			letter-spacing: 4px;
+		}
+		header h5{
+			font-weight: 300;
+			font-size: 1em;
+			letter-spacing: 4px;
+			color: black;
+		}
+		.about,.contacts,.project{
+			line-height: 1.5em;
+			letter-spacing: 1px;
+			font-weight: 300;
+		}
+		.about h1,.project h1{
+			text-align: center;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+			margin: 100px 0px 0 125px ;
+			letter-spacing: 4px;
+			font-family: Courgette;
+
+		}
+
+		.about p{
+			color: black;
+			margin: 10px 0px 0 125px ;
+		}
+
+		.about h3{
+			font-weight: 300px;
+			margin: 50px 0px 50px 125px;
+		}
+		.container{
+			width: 100;
+			margin-left: 125px;
+			background-color: #b2b2b2;
+		}
+		.skills{
+			text-align: right;
+			padding-right: 20px;
+			line-height: 30px;
+			color: black;
+			background-color: #87cefa;
+		}
+		.datastructure{
+			width: 45%;
+		}
+		
+		.html{
+			width: 78%;
+		}
+		.css{
+			width: 70%;
+		}
+		.bootstrap{
+			width: 65%;
+		}
+		.Cpp{
+			width: 55%;
+		}
+		.C{
+			width: 85%;
+		}
+		.python{
+			width: 50%;
+		}
+		.algorithms{
+			width: 35%;
+		}
+		#i1{
+			text-align: center;
+			margin-top: 20px;
+		}
+		.project h3{
+			color: black;
+			font-weight: 300;
+			letter-spacing:2px;
+		}
+		.project p{
+			font-size: .875em;
+		}
+		.row-halves{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			justify-content:space-between;
+			margin: 20px 0;
+			-webkit-flex-pack:justify;
+		}
+		.row-halves .col{
+			width: 49%;
+		}
+		.col{
+			border: 1px solid #87cefa;
+			background: #87cefa;
+			color: black;
+			padding: 3px;
+		}
+		
+	    .contacts .container{
+	    	margin-top: 20px;
+	    	margin-bottom: 100px;
+	    	background: transparent;
+	    	padding: 20px 0;
+	    	border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+	    }
+	    
+	    .footer{
+	    	border-top: 1px solid #222;
+	    }
+	    .top-bar{
+	    	padding: 20px 0;
+	    	text-align: center; 
+	    }
+	    .top-bar a{
+	    	margin: 10px;
+	    	font-size: 2em;
+	    	color: #b2b2b2;
+	    	transition: all 0.35s;
+	    	display: inline-block;
+	    }
+	    .top-bar a:hover{
+	    	transform: scale(1.1);
+	    	color: #87cefa;
+	    }
+	    .bottom-bar{
+	    	background: #f0f8ff;
+	    	text-align: center;
+	    	font-size: 0.75em;
+	    }
+	    @media (max-width: 768px){
+	    	.row-halves{
+	    		display: block;
+	    		margin-left: 125px;
+	    	}
+	    	.row-halves .col{
+	    		width: 100%;
+	    		margin: 125px 0 10px 0;
+	    	}
+	    }
+	    @media (max-width: 601px){
+	    	aside{
+	    		display: block;
+	    	}
+	    	main{
+	    		width: 100%;
+	    		margin: 0 auto;
+	    		padding:12px 25px; 
+	    	}
+	    	header{
+	    	margin-top: 80px;
+	        }
+	        header h1{
+	    	
+	    	    font-size: 3em;
+	    	    line-height: 1.4em;
+	        }
+	        header h5{
+	        	font-size: 1em;
+	        	letter-spacing: 2px;
+	        }
+	        
+	        
+	    }
+	    @media(min-width: 600px){
+	    	.mobile-nav{
+	    		display: none;;
+	    	}
+	    }
+
+
+
+	</style>
+</head>
+<body>
+<aside>
+	<nav>
+		<img src="Me1.jpg">
+		<a href="#home"><i class="material-icons md-36">home</i>
+		<p>Home</p>
+		</a>
+		<a href="#about"><i class="material-icons md-36">person</i>
+		<p>About me</p>
+		</a>
+		<a href="#project"><i class="material-icons md-36">business</i>
+		<p>Projects</p>
+		</a>
+		<a href="#contacts"><i class="material-icons md-36">mail</i>
+		<p>Connect</p>
+		</a>
+		
+	</nav>
+</aside>
+     
+     <main>
+     	<header class="home" id="home"><br><br>
+     		<h1>I'm Ankit Chand</h1>
+     		<h5>Coder // Developer</h5>
+     		<img src="Me.jpg">
+     		
+     	</header>
+     </main>
+     <section class="about" id="about">
+     	<h1>About me</h1>
+     	<p>
+     		Hello, I’m Ankti Chand, a computer science student at Indian Institute of Technology (Indian School of Mines) Dhanbad.
+     	</p>
+     	
+
+        <h3>My Skills</h3>
+        
+
+        <p>HTML</p>
+        <div class="container">
+        	<div class="skills html">78%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+        	<div class="skills css">70%</div>
+        </div>
+
+        <p>Bootstrap</p>
+        <div class="container">
+        	<div class="skills bootstrap">65%</div>
+        </div>
+
+        <p>C++</p>
+        <div class="container">
+        	<div class="skills Cpp">55%</div>
+        </div>
+        <p>C</p>
+        <div class="container">
+        	<div class="skills C">85%</div>
+        </div>
+        <p>Python</p>
+        <div class="container">
+        	<div class="skills python">50%</div>
+        </div>
+        <p>Data Structures</p>
+        <div class="container">
+        	<div class=" skills datastructure">45%</div>
+        </div>
+        <p>Algorithms</p>
+        <div class="container">
+        	<div class=" skills algorithms">35%</div>
+        </div>
+     	
+     </section>
+
+     
+    
+     <section class="project" id="project">
+     	<h1 id="i1">Projects</h1>
+     	<div class="row-halves">
+     		<div class="col">
+     			<img src="acm.jpg">
+     			<h3>ACM League of Code</h3>
+     			<p>A web-development project under ACM league of code on which i’m currently working.
+     		    </p>
+     		</div>
+
+     		<div class="col">
+     			<img src="ml2.jpg">
+     			<h3>Machine Learning Library from Scratch</h3>
+     			<p>Developed a machine learning library consisting of machine learning algorithms without using any ready-to-use library.
+     		    </p>
+     		</div>
+     	</div>
+
+     	
+     </section>
+
+     
+
+     <section>
+     	<footer>
+     		<section class="top-bar contacts" id="contacts">
+     			<h1>CONTACTS</h1>
+     			Kohara Bujurg<br>
+	            Gola Bazar<br>
+	            Gorakhpur(U.P.)<br>
+	            India,273411<br>
+	            <a href="tel:+91-9610337128"><i class="material-icons" style=color:#87cefa>call</i>+91-9610337128</a>
+     			<a href="https://www.facebook.com/ankit.chand.14855"><i class="fa fa-facebook-f"></i></a>
+     			<a href="https://www.linkedin.com/in/ankit-chand-6b2904172"><i class="fa fa-linkedin"></i></a>
+     			<a href="https://www.instagram.com/imankit_kaushik07/"><i class="fa fa-instagram"></i></a>
+     			<a href="https://github.com/ankitchandkaushik"><i class="fa fa-github"></i></a>
+     			<a href="mailto:ankit.kaushil.33671@gmail.com">g-mail</a>
+     		</section>
+     		<section class="bottom-bar">
+     			<p>Ankit Chand &copy All Rights Reserved</p>
+     			
+     		</section>
+
+
+
+     	</footer>
+     </section>
+  
+
+</body>
+</html>
