@@ -1,0 +1,92 @@
+body
+{
+
+	background-color: grey;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+html{
+    border: 5px solid rgba(102, 153, 153,.1);
+    padding: 2px;
+}
+
+
+
+* {box-sizing:border-box}
+
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right; 
+  padding: 10px;
+  color: white;
+}
+
+.cpp {width: 60%; background-color: #4CAF50;} 
+.java {width: 50%; background-color: #2196F3;} 
+.html {width: 35%; background-color: #f44336;}
+.css {width: 20%; background-color: #550066;}
+
+.jumbotron:nth-of-type(1)
+{
+  color:white;
+	background:url(https://images.unsplash.com/photo-1484906468498-4d81f1001881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#px
+{
+  height: 100px;
+}
+/* Twitter */
+.fa-twitter {
+  background:#55ACEE;
+  color: white;
+}
+#r
+{
+  font-family: 'Trade Winds', cursive;
+  font-size: 80px;
+  text-shadow: 0px 2px 3px red;
+}
+#u
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 100px;
+  text-shadow: 0 2px 2px pink;
+}
+#l
+{
+  padding-top: 0px;
+}
+#j
+{
+ font-family: 'Acme', sans-serif;
+  font-weight: 700;
+
+}
+#x
+{
+font-family: 'Acme', sans-serif;
+}

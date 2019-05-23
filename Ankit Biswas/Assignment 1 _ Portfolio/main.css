@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: lato;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 1px;
+  color:blueviolet;
+  background-color:#4caf50;
+  background-image: url("p-images/bg.jpg");
+  background-size: 100%;
+  width:100%;
+  background-repeat: no-repeat;
+}
+#fake-h1 {
+    margin:0;
+    padding: 10px 10px 0px 10px;
+    font-size: 50px;
+    font-family: 'Fredericka the Great', cursive;
+}
+.header p{
+      font-family: 'Niconne', cursive;
+      font-size:30px;
+      margin:0px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+ }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+li {
+  
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  border-bottom:4px solid #4caf50;
+}
+#right-nav{
+    float:right;
+}
+#left-nav{
+    float: left;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+.skill1 {
+  background-color: darkkhaki;
+  width: 100%;
+  padding: 10px;
+}
+    .skill1 p{
+  text-align:left;
+  vertical-align:bottom;
+  font-family:moon;
+    }
+
+#ai{
+    width:100px;
+    padding:10px;
+    margin:5px;
+    float:left;
+    }
+    
+    #gal{
+    width:310px;
+    padding:10px;
+    margin:5px;
+    float:left;
+    }
+    
+    #lady{
+    width:380px;
+    padding:10px;
+    margin:5px;
+    float:left;
+    }
+
+    #ps{
+    width:100px;
+    padding:10px;
+    margin:5px;
+    float:left;
+    }
+    
+    #py{
+        width:100px;
+    padding:10px;
+    margin:5px;
+    float:left;
+    }
+    
+    #face{
+        width:80%;
+        height:auto;
+        margin:30px 20px;
+        padding:5px;
+    }
+    
+    #logos{
+        width:240px;
+        margin:30px 20px 5px 20px;
+        padding:5px;
+    }
+    
+    #logos1{
+        width:50px;
+        margin:5px 20px 5px 20px;
+        padding:0px;
+        float:left;
+    }
+.card {
+  background-color: bisque;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn{   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a{
+    float: none;
+    width: 100%;
+  }
+}
