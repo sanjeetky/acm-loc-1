@@ -1,0 +1,70 @@
+#q
+{
+margin-left: 25%;
+	margin-top: 20%;
+font-size: 100px;
+color: #F9f3F4;
+text-shadow:2px 2px 1px red ;
+
+}
+
+html,body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	width:100%;
+	font-size: 16px;
+	background-color: #fff;
+}
+body
+{
+	background:url(https://images.unsplash.com/photo-1533497197926-c9e810dcea9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=677&q=80);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display:table;
+	font-family: 'Raleway', sans-serif;
+
+	
+}
+.btn
+{
+	margin-left: 35%;
+	margin-top: 2%;
+	border-radius:9px;
+	color: #036A81;
+	font-size: 135%;
+	padding:10px 20px;
+	border: 3px solid #036A81;
+	text-transform:uppercase;
+font-family: 'Oswald', sans-serif;
+}
+.btn:hover
+{
+	color:#fff;
+	border:3px solid #fff;
+}
+.navbar-default {
+  background-color:teal;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+#e
+{
+	color: black;
+}
+ul.nav a:hover { color: #fff !important; }
+
+#e:hover
+{
+	color: red;
+}
+#e
+{
+	font-family: 'Trade Winds', cursive;
+	color: bred;
+	font-size: 40px;
+}

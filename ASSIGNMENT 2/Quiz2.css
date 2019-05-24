@@ -1,0 +1,60 @@
+
+body
+{
+    background: #6cf;
+    font-size: 35px;
+font-family: 'Merriweather', serif;
+
+ 
+}
+
+
+.jumbotron
+{
+background:rgba(255,255,255,0.5);
+    position:center;
+    margin-top: 5%;
+
+   padding-top: 5%;
+      padding-bottom: 5%;
+margin-bottom: 5%;
+      font-size: 50px;
+
+}
+#title
+{
+    margin-top: 0%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150px;
+}
+ul {
+    list-style-type: none;
+    padding: 40;
+    margin: 0;
+}
+
+#next
+{
+    background:#ffe6e6;
+}
+#prev
+{
+    background:#ffe6e6;
+}
+#start
+{
+  background:#ffe6e6;   
+}
+input[type=radio] {
+    border: 0px;
+    width: 35px;
+    height: 35px;
+}
+#title {
+    text-decoration: underline;
+}
+#o
+{
+  margin-top: 5%;
+}
