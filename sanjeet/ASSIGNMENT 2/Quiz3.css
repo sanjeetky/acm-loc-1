@@ -1,0 +1,25 @@
+h1
+{
+
+	text-align: center;
+}
+html,body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	width:100%;
+	font-size: 16px;
+	background-color: #fff;
+}
+body
+{
+	background:url(https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display:table;
+	
+}
