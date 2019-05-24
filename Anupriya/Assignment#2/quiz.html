@@ -22,13 +22,13 @@
 <h1>Quiz on HTML5</h1>
 <div class="quiz-container"> 
 <div id="quiz"></div>
+<p id="results" style="font-size: 48px"></p>
 </div>
 <button id="previous">Previous Question</button>
 <button id="next">Next Question</button>
 <button id="submit">Submit Quiz</button><br>
 <p id="times"></p>
 <text>Remaining Time: <text id="time001">200 </text> secs</text><br />
-<div id="results"></div>
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 <script id="rendered-js">
 	 (function () {
@@ -134,7 +134,8 @@
     });
 
     
-    resultsContainer.innerHTML = `${numCorrect-1} out of ${myQuestions.length-1}`;
+    resultsContainer.innerHTML = `<p>RESULT <br> ${numCorrect-1} out of ${myQuestions.length-1}</p>`;
+  showNextSlide();
   }
 
   function showSlide(n) {
