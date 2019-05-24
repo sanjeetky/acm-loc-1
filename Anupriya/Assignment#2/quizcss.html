@@ -1,0 +1,209 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="quiz.css" />
+
+<link rel="shortcut icon" href="favicon.ico" /> 
+<title>CSS3 Quiz</title>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<h1>Quiz on CSS3</h1>
+<div class="quiz-container">
+<div id="quiz"></div>
+<p id="results" style="font-size: 48px"></p>
+</div>
+
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<p id="times"></p>
+<text>Remaining Time: <text id="time001">200 </text> secs</text><br />
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script id="rendered-js">
+	 (function () {
+    c=200;
+  const myQuestions = [
+  {
+    question: "What is css Float?",
+    answers: {
+      a: "allows other elements to wrap around an element",  
+      b: "element can be pushed to the left or right",  
+      c: "Both of the Above" },
+
+    correctAnswer: "c" },
+
+  {
+    question: "How to re-size/scale objects using CSS3?",
+    answers: {
+      a: "transform: scale(2,4)", 
+      b: "scale-object: 2,4",
+      c: "scale: (2,4)"  },
+
+    correctAnswer: "a" },
+
+  {
+    question: "The _____ property specifies the stack order of an element",
+    answers: {
+      a: "d-index",   
+      b: "x-index", 
+      c: "z-index",
+       },
+
+    correctAnswer: "d" },
+
+    {
+    question: "In CSS, it is not possible to specify different padding for different sides",
+    answers: {
+      a: "True",
+      b: "False",
+       },
+
+    correctAnswer: "b" },
+    { 
+    question: "Quiz Over <br> Hope You Enjoyed!<br><h4>Press Submit to finish the Quiz</h1>" },
+
+    ];
+
+
+
+  function buildQuiz() {
+
+    const output = [];
+
+ 
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+    
+      const answers = [];
+
+
+      for (letter in currentQuestion.answers) {
+    
+        answers.push(
+        `<label>
+             <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+           </label>`);
+
+      }
+
+      output.push(
+      `<div class="slide">
+           <div class="question"> ${currentQuestion.question} </div>
+           <div class="answers"> ${answers.join("")} </div>
+         </div>`);
+
+    });
+
+    
+    quizContainer.innerHTML = output.join("");
+  }
+
+  function showResults() {
+  c="-";
+    const answerContainers = quizContainer.querySelectorAll(".answers");
+    let numCorrect = 0;
+
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      if (userAnswer === currentQuestion.correctAnswer) {
+        numCorrect++;
+
+     
+        answerContainers[questionNumber].style.color = "lightgreen";
+      } else {
+       
+        answerContainers[questionNumber].style.color = "red";
+      }
+    });
+    
+    resultsContainer.innerHTML = `<p>RESULT <br> ${numCorrect-1} out of ${myQuestions.length-1}</p>`;
+  showNextSlide();
+  }
+
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove("active-slide");
+    slides[n].classList.add("active-slide");
+    currentSlide = n;
+
+    if (currentSlide === 0) {
+      previousButton.style.display = "none";
+    } else {
+      previousButton.style.display = "inline-block";
+    }
+
+    if (currentSlide === slides.length - 1) {
+      nextButton.style.display = "none";
+      submitButton.style.display = "inline-block";
+    } else {
+      nextButton.style.display = "inline-block";
+      submitButton.style.display = "none";
+    }
+  }
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  const quizContainer = document.getElementById("quiz");
+  const resultsContainer = document.getElementById("results");
+  const submitButton = document.getElementById("submit");
+
+
+  buildQuiz();
+
+  const previousButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  showSlide(0);
+
+  submitButton.addEventListener("click", showResults);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+})();
+
+function timer001() {
+            c = c - 1;
+            if (c < 200) {
+                time001.innerHTML = c;
+                
+            }
+
+            if (c < 1) {   
+                cr="-";
+            }
+
+        }
+        
+      setInterval("timer001()", 1000);
+
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
+</html>
